@@ -27,7 +27,7 @@ export abstract class CustomError extends Error {
             message: this.message,
             status: this.status,
             statusCode: this.statusCode
-        }
+        };
     }
 }
 
@@ -36,7 +36,7 @@ export class JoiRequestValidationError extends CustomError {
     status = 'error';
 
     constructor(message: string) {
-        super(message)
+        super(message);
     }
 }
 
@@ -45,7 +45,7 @@ export class BadRequestError extends CustomError {
     status = 'error';
 
     constructor(message: string) {
-        super(message)
+        super(message);
     }
 }
 
@@ -54,7 +54,7 @@ export class NotFoundError extends CustomError {
     status = 'error';
 
     constructor(message: string) {
-        super(message)
+        super(message);
     }
 }
 
@@ -63,7 +63,7 @@ export class NotAuthorizedError extends CustomError {
     status = 'error';
 
     constructor(message: string) {
-        super(message)
+        super(message);
     }
 }
 
@@ -72,7 +72,7 @@ export class FileTooLargeError extends CustomError {
     status = 'error';
 
     constructor(message: string) {
-        super(message)
+        super(message);
     }
 }
 
@@ -81,6 +81,6 @@ export class ServerError extends CustomError {
     status = 'error';
 
     constructor(message: string) {
-        super(message)
+        super(message);
     }
 }
